@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>This is FRONTEND</title>
+	<link rel="stylesheet" href="reset.css"> 
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+	<script src="https://kit.fontawesome.com/80e511d550.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>Create your character!</header>
+
+	<section class="card-container">
+
+		<div class="card">
+			<h2>Choose your character!</h2>
+
+			<form>
+				<label for="name">Name:</label>
+				<input id="name" type="text" name="name" placeholder="Type your name here">
+		
+				<label for="gender">Gender:</label>
+				<select id="gender" name="gender">
+					<option disabled selected value> -- select an option -- </option>
+					<option value="female">female</option>
+					<option value="male">male</option>
+				</select>
+		
+				<label for="race">Race:</label>
+				<select id="race" name="race">
+					<option disabled selected value> -- select an option -- </option>
+					<option value="unicorn">unicorn</option>
+					<option value="fairy">fairy</option>
+					<option value="dragon">dragon</option>
+					<option value="mermaid">mermaid</option>
+					<option value="witch">witch</option>
+				</select>
+		
+				<label for="class">Class:</label>
+				<select id="class" name="class">
+					<option disabled selected value> -- select an option -- </option>
+					<option value="bard">bard</option>
+					<option value="monk">monk</option>
+					<option value="wizard">wizard</option>
+					<option value="fighter">fighter</option>
+					<option value="ranger">ranger</option>
+				</select>
+			</form>
+		</div>
+
+		<div class="card">
+			<h2>Your character:</h2>
+
+			<div id="char-name"></div>
+			<div id="char-gender"></div>
+			<div id="char-race"></div>
+			<div id="char-class"></div>
+		</div>
+
+	</section>
+
+	<button>Next</button>
+
+</body>
+</html>

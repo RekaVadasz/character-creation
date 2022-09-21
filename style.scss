@@ -1,0 +1,188 @@
+body {
+    background-color: #FFEAE0;
+
+    header {
+        padding-left: 73px;
+        background-color: #D8E1F3;
+        font-family:  'Gloria Hallelujah', cursive;
+        font-size: 36px;
+        color: #7691C0;
+
+        @media screen and (max-width: 700px) {
+            padding-left: 24px;
+            font-size: 24px;
+        }
+    }
+
+    section.card-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        min-height: 740px;
+        padding: 12px;
+
+        @media screen and (max-width: 700px) {
+            flex-direction: column;
+            justify-content: space-evenly;
+            row-gap: 12px;
+        }
+
+        div.card {
+            width: 500px;
+            height: 640px;
+            border-radius: 25px;
+            background-color: #ffffff;
+            box-shadow: 0 15px 22px rgba(0, 0, 0, .25);
+
+            @media screen and (max-width: 1200px) {
+                width: 420px;
+            }
+
+            @media screen and (max-width: 940px) {
+                width: 310px;
+            }
+
+            h2 {
+                height: 80px;
+                padding: 26px;
+                border-top-left-radius: inherit;
+                border-top-right-radius: inherit;
+                margin-bottom: 20px;
+                background-color: #D8E1F3;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 500;
+                color: #7691C0;
+                text-align: center;
+
+            };
+            
+            //from to fill out
+            form {
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: flex-start;
+                height: 400px;
+                margin-left: 75px;
+
+                @media screen and (max-width: 940px) {
+                    margin-left: 50px;
+                }
+
+                label, input, select {
+                    display: block;
+                }
+
+                input, select {
+                    width: 200px;
+                    height: 45px;
+                    border-radius: 8px;
+                    box-shadow:0px 5px 10px 0px #3a3a3958;
+                }
+                
+                label {
+                    font-family: 'Roboto', sans-serif;
+                    color: #7691C0;
+                }
+
+                
+
+                input#name {
+                    padding-left: 8px;
+                    font-family:  'Gloria Hallelujah', cursive;
+                    font-size: 16px;
+                    color: #7691C0;
+                }
+
+                input#name::placeholder {
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 16px;
+                    color: #7691C0;
+                    opacity: 0.6;
+                }
+
+                select {
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #7691C0;
+                    padding-left: 32px;
+                    
+                    option {
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: #7691C0;
+                    }
+
+                }
+                //select all 1st options, so that they disappear once a value is chosen
+                select > option:nth-child(1) { 
+                    display: none;
+                    
+                }
+        
+            }
+
+            //Your character
+            div {
+                font-family:  'Gloria Hallelujah', cursive;
+                color: #7691C0;
+            }
+
+            i {
+                margin-left: 10px;
+            }
+
+            #char-name, #char-gender {
+                display: inline;
+                font-size: 44px;
+            }
+
+            #char-race {
+                
+                img {
+                    width: 320px;
+                }
+            }
+
+            #char-class {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                margin-top: 15px;
+            
+                img {
+                    width: 54px;
+                }
+
+                span {
+                    font-size: 24px;
+                    margin-left: 11px;
+                    margin-top: 5px;
+                }
+            }
+        }    
+
+        .card:nth-child(2) {
+            text-align: center;
+        }
+    }
+
+    button {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 45px;
+        border-radius: 10px;
+        margin: 8px;
+        background-color: #D8E1F3;;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: #7691C0;
+        box-shadow:0px 5px 10px 0px #3a3a3958;
+    }
+}

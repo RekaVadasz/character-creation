@@ -1,0 +1,237 @@
+body {
+  background-color: #FFEAE0;
+}
+
+body header {
+  padding-left: 73px;
+  background-color: #D8E1F3;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 36px;
+  color: #7691C0;
+}
+
+@media screen and (max-width: 700px) {
+  body header {
+    padding-left: 24px;
+    font-size: 24px;
+  }
+}
+
+body section.card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 740px;
+  padding: 12px;
+}
+
+@media screen and (max-width: 700px) {
+  body section.card-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    row-gap: 12px;
+  }
+}
+
+body section.card-container div.card {
+  width: 500px;
+  height: 640px;
+  border-radius: 25px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 15px 22px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 15px 22px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 1200px) {
+  body section.card-container div.card {
+    width: 420px;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  body section.card-container div.card {
+    width: 310px;
+  }
+}
+
+body section.card-container div.card h2 {
+  height: 80px;
+  padding: 26px;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  margin-bottom: 20px;
+  background-color: #D8E1F3;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #7691C0;
+  text-align: center;
+}
+
+body section.card-container div.card form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 400px;
+  margin-left: 75px;
+}
+
+@media screen and (max-width: 940px) {
+  body section.card-container div.card form {
+    margin-left: 50px;
+  }
+}
+
+body section.card-container div.card form label, body section.card-container div.card form input, body section.card-container div.card form select {
+  display: block;
+}
+
+body section.card-container div.card form input, body section.card-container div.card form select {
+  width: 200px;
+  height: 45px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 5px 10px 0px #3a3a3958;
+          box-shadow: 0px 5px 10px 0px #3a3a3958;
+}
+
+body section.card-container div.card form label {
+  font-family: 'Roboto', sans-serif;
+  color: #7691C0;
+}
+
+body section.card-container div.card form input#name {
+  padding-left: 8px;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 16px;
+  color: #7691C0;
+}
+
+body section.card-container div.card form input#name::-webkit-input-placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #7691C0;
+  opacity: 0.6;
+}
+
+body section.card-container div.card form input#name:-ms-input-placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #7691C0;
+  opacity: 0.6;
+}
+
+body section.card-container div.card form input#name::-ms-input-placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #7691C0;
+  opacity: 0.6;
+}
+
+body section.card-container div.card form input#name::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #7691C0;
+  opacity: 0.6;
+}
+
+body section.card-container div.card form select {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #7691C0;
+  padding-left: 32px;
+}
+
+body section.card-container div.card form select option {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #7691C0;
+}
+
+body section.card-container div.card form select > option:nth-child(1) {
+  display: none;
+}
+
+body section.card-container div.card div {
+  font-family: 'Gloria Hallelujah', cursive;
+  color: #7691C0;
+}
+
+body section.card-container div.card i {
+  margin-left: 10px;
+}
+
+body section.card-container div.card #char-name, body section.card-container div.card #char-gender {
+  display: inline;
+  font-size: 44px;
+}
+
+body section.card-container div.card #char-race img {
+  width: 320px;
+}
+
+body section.card-container div.card #char-class {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 15px;
+}
+
+body section.card-container div.card #char-class img {
+  width: 54px;
+}
+
+body section.card-container div.card #char-class span {
+  font-size: 24px;
+  margin-left: 11px;
+  margin-top: 5px;
+}
+
+body section.card-container .card:nth-child(2) {
+  text-align: center;
+}
+
+body button {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 80px;
+  height: 45px;
+  border-radius: 10px;
+  margin: 8px;
+  background-color: #D8E1F3;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #7691C0;
+  -webkit-box-shadow: 0px 5px 10px 0px #3a3a3958;
+          box-shadow: 0px 5px 10px 0px #3a3a3958;
+}
+/*# sourceMappingURL=style.css.map */
